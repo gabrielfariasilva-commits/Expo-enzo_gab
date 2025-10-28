@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instrument GO - Cadastro</title>
+  <link rel="stylesheet" href="C:\Users\Vanessa\OneDrive\Documentos\expoo_enzo_gab3j\expoo_enzo_gab3j\css\cadastro.css">
+</head>
+<body>
+
+  <!-- ===== Cabeçalho ===== -->
+  <header class="header">
+    <div class="logo">
+      <img src="imagens/Captura_de_tela_2025-10-10_171117-removebg-preview (1).png" alt="Logo da Loja">
+      <h1>Instrument GO</h1>
+    </div>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="C:\Users\Vanessa\OneDrive\Documentos\expoo_enzo_gab3j\expoo_enzo_gab3j\home.html">Home</a></li>
+        <li><a href="C:\Users\Vanessa\OneDrive\Documentos\expoo_enzo_gab3j\expoo_enzo_gab3j\html\produtos.html">Produtos</a></li>
+        <li><a href="C:\Users\Vanessa\OneDrive\Documentos\expoo_enzo_gab3j\expoo_enzo_gab3j\html\login.html">Login</a></li>
+        <li><a href="C:\Users\Vanessa\OneDrive\Documentos\expoo_enzo_gab3j\expoo_enzo_gab3j\html\cadastro.html" class="active">Cadastro</a></li>
+        <li><a href="C:\Users\Vanessa\OneDrive\Documentos\expoo_enzo_gab3j\expoo_enzo_gab3j\html\carrinho.html">Carrinho</a></li>
+      </ul>
+    </nav>
+
+    <div class="search-bar">
+      <input id="search-bar" type="text" placeholder="Buscar produtos..." />
+      <button>🔍</button>
+    </div>
+  </header>
+
+  <!-- ===== Conteúdo Principal ===== -->
+  <main id="content" style="margin-top: 120px;">
+    <section class="cadastro-container">
+      <div class="cadastro-box">
+        <h2>Crie sua Conta</h2>
+
+        <form id="cadastroForm">
+          <label for="nome">Nome completo:</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+          <label for="senha">Senha:</label>
+          <input type="password" id="senha" name="senha" placeholder="Crie uma senha" required>
+
+          <label for="confirmarSenha">Confirmar senha:</label>
+          <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Confirme sua senha" required>
+
+          <button type="submit" class="btn-cadastro">Cadastrar</button>
+        </form>
+
+        <p class="texto-login">
+          Já tem uma conta? 
+          <a href="C:\Users\Vanessa\OneDrive\Documentos\expoo_enzo_gab3j\expoo_enzo_gab3j\html\login.html">Faça login aqui</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Rodapé ===== -->
+  <footer>
+    <p>© 2025 Instrument GO - Todos os direitos reservados 🎵</p>
+  </footer>
+
+  <script src="java/cadastro.js"></script>
+</body>
+</html>

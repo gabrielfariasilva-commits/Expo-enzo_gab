@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instrument GO - Produtos</title>
+  <link rel="stylesheet" href="C:\Users\Vanessa\OneDrive\Documentos\expoo_enzo_gab3j\expoo_enzo_gab3j\css\produtos.css">
+</head>
+<body>
+
+  <!-- ======= Cabeçalho ======= -->
+  <header class="header">
+    <div class="logo">
+      <img src="imagens/Captura_de_tela_2025-10-10_171117-removebg-preview (1).png" alt="Logo da Loja">
+      <h1>Instrument GO</h1>
+    </div>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="C:\Users\Vanessa\OneDrive\Documentos\expoo_enzo_gab3j\expoo_enzo_gab3j\home.html">Home</a></li>
+        <li><a href="C:\Users\Vanessa\OneDrive\Documentos\expoo_enzo_gab3j\expoo_enzo_gab3j\html\produtos.html" class="active">Produtos</a></li>
+        <li><a href="C:\Users\Vanessa\OneDrive\Documentos\expoo_enzo_gab3j\expoo_enzo_gab3j\html\login.html">Login</a></li>
+        <li><a href="C:\Users\Vanessa\OneDrive\Documentos\expoo_enzo_gab3j\expoo_enzo_gab3j\html\cadastro.html">Cadastro</a></li>
+        <li><a href="C:\Users\Vanessa\OneDrive\Documentos\expoo_enzo_gab3j\expoo_enzo_gab3j\html\carrinho.html">Carrinho</a></li>
+      </ul>
+    </nav>
+
+    <div class="search-bar">
+      <input id="search-bar" type="text" placeholder="Buscar produtos..." />
+      <button>🔍</button>
+    </div>
+  </header>
+
+  <!-- ======= Conteúdo Principal ======= -->
+  <main id="content" style="margin-top: 100px;">
+
+    <section class="produtos-destaque">
+      <h2>🎶 Catálogo Completo de Produtos</h2>
+
+      <div class="filtros">
+        <label for="categoria">Filtrar por categoria:</label>
+        <select id="categoria">
+          <option value="todos">Todos</option>
+          <option value="instrumentos">Instrumentos</option>
+          <option value="acessorios">Acessórios</option>
+          <option value="audio">Equipamentos de Áudio</option>
+        </select>
+
+        <label for="ordenar">Ordenar por:</label>
+        <select id="ordenar">
+          <option value="padrao">Padrão</option>
+          <option value="precoMenor">Preço: Menor para Maior</option>
+          <option value="precoMaior">Preço: Maior para Menor</option>
+        </select>
+      </div>
+
+      <div class="grid-produtos">
+
+        <div class="produto">
+          <img src="imagens/guitarra 0.png" alt="Guitarra Fender">
+          <h3>Guitarra Fender Stratocaster</h3>
+          <p class="preco">R$ 4.500,00</p>
+          <button class="ver-mais" data-id="1">Ver mais</button>
+        </div>
+
+        <div class="produto">
+          <img src="imagens/teclado.png" alt="Teclado Yamaha">
+          <h3>Teclado Yamaha PSR-E373</h3>
+          <p class="preco">R$ 2.000,00</p>
+          <button class="ver-mais" data-id="2">Ver mais</button>
+        </div>
+
+        <div class="produto">
+          <img src="imagens/violao.png" alt="Violão Takamine">
+          <h3>Violão Takamine GD30</h3>
+          <p class="preco">R$ 1.600,00</p>
+          <button class="ver-mais" data-id="3">Ver mais</button>
+        </div>
+
+        <div class="produto">
+          <img src="imagens/caixa de som.png" alt="Caixa de Som JBL">
+          <h3>Caixa de Som JBL PartyBox 100</h3>
+          <p class="preco">R$ 3.200,00</p>
+          <button class="ver-mais" data-id="4">Ver mais</button>
+        </div>
+
+        <div class="produto">
+          <img src="imagens/fone.png" alt="Fone AKG Studio">
+          <h3>Fone AKG K240 Studio</h3>
+          <p class="preco">R$ 499,90</p>
+          <button class="ver-mais" data-id="5">Ver mais</button>
+        </div>
+
+        <div class="produto">
+          <img src="imagens/microfone.png" alt="Microfone Shure SM58">
+          <h3>Microfone Shure SM58</h3>
+          <p class="preco">R$ 890,00</p>
+          <button class="ver-mais" data-id="6">Ver mais</button>
+        </div>
+
+        <div class="produto">
+          <img src="imagens/pedaleira.png" alt="Pedaleira Boss GT-1">
+          <h3>Pedaleira Boss GT-1</h3>
+          <p class="preco">R$ 2.450,00</p>
+          <button class="ver-mais" data-id="7">Ver mais</button>
+        </div>
+
+        <div class="produto">
+          <img src="imagens/palhetas.png" alt="Kit Palhetas Dunlop">
+          <h3>Kit de Palhetas Dunlop (10 unidades)</h3>
+          <p class="preco">R$ 39,90</p>
+          <button class="ver-mais" data-id="8">Ver mais</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ======= Rodapé ======= -->
+  <footer>
+    <p>© 2025 Instrument GO - Todos os direitos reservados 🎵</p>
+  </footer>
+
+  <script src="C:\Users\Vanessa\OneDrive\Documentos\expoo_enzo_gab3j\expoo_enzo_gab3j\java\produtos.js"></script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: #0d0d0d;
+  color: #fff;
+  padding-bottom: 80px; /* espaço pro footer fixo */
+}
+
+/* ===== Cabeçalho ===== */
+.header {
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(90deg, #5a00a3, #9b00ff);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #ffd700;
+  transform: scale(1.1);
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-bar input {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 180px;
+  font-size: 0.9rem;
+}
+
+.search-bar button {
+  background: #fff;
+  color: #5a00a3;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.search-bar button:hover {
+  background: #ffd700;
+  transform: scale(1.1);
+}
+
+/* ===== Container do Carrinho ===== */
+.carrinho-container {
+  margin-top: 140px;
+  padding: 30px 10%;
+  text-align: center;
+  background: #111;
+  min-height: 70vh;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(162, 89, 255, 0.3);
+}
+
+.carrinho-container h2 {
+  color: #a259ff;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  text-shadow: 0 0 10px rgba(162, 89, 255, 0.5);
+}
+
+/* ===== Lista de Itens ===== */
+.lista-carrinho {
+  width: 100%;
+  background: #1a1a1a;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow-x: auto;
+}
+
+.lista-carrinho table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.lista-carrinho th, .lista-carrinho td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lista-carrinho th {
+  color: #a259ff;
+  font-weight: 600;
+  border-bottom: 2px solid #a259ff33;
+}
+
+.lista-carrinho td img {
+  width: 70px;
+  border-radius: 10px;
+}
+
+.lista-carrinho td button {
+  background: none;
+  border: none;
+  color: #ff5555;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.lista-carrinho td button:hover {
+  color: #ff0000;
+}
+
+/* ===== Total ===== */
+.carrinho-total {
+  margin-top: 30px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.carrinho-total span {
+  color: #a259ff;
+}
+
+/* ===== Botões de Ações ===== */
+.acoes-carrinho {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.btn-limpar, .btn-finalizar {
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-limpar {
+  background: #ff3333;
+  color: #fff;
+}
+
+.btn-limpar:hover {
+  background: #ff0000;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.btn-finalizar {
+  background: linear-gradient(90deg, #7b39d6, #a259ff);
+  color: #fff;
+}
+
+.btn-finalizar:hover {
+  background: linear-gradient(90deg, #a259ff, #7b39d6);
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(162, 89, 255, 0.6);
+}
+
+/* ===== Rodapé ===== */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #1a1a1a;
+  color: #aaa;
+  text-align: center;
+  padding: 15px 0;
+  border-top: 2px solid #a259ff33;
+  z-index: 1000;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 768px) {
+  .carrinho-container {
+    padding: 20px 5%;
+  }
+
+  .lista-carrinho table {
+    font-size: 0.9rem;
+  }
+
+  .acoes-carrinho {
+    flex-direction: column;
+  }
+
+  .btn-limpar, .btn-finalizar {
+    width: 100%;
+  }
+}
